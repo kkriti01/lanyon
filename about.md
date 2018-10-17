@@ -4,6 +4,9 @@ title: About
 ---
 
 <p class="message">
+  “I'm not a great programmer; I'm just a good programmer with great habits.” 
+  </p>
+  <p>
   Hey there! I am a software engineer based out in Mumbai.I am currently working as a python developer in a startup.
   
   I have previously worked as a system engineer in Infosys pvt. Limited. I am havng experince in full stack development 
