@@ -5,9 +5,8 @@ permalink:           pretty
 
 # Setup
 title:               Kriti Shrivastwa
-tagline:             ''
-description:         'Kriti Shrivastwa
-                     Coder | Explorer | Reader | Pythonista'
+tagline:             'Kriti Shrivastwa'
+description:         'Coder | Explorer | Reader | Pythonista'
 url:                 
 baseurl:             '/'
 paginate:            5
