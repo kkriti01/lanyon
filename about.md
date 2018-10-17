@@ -16,7 +16,7 @@ title: About
   <p>
   I love reading, cooking  and travelling.</p>
   <p>
-  You can contact me at <a href="#">kriti.cs10@gmail.com</a> or follow me <a href="https://twitter.com/kriti_k01">kriti_k01</a>
+  You can contact me at <a href="mail_to:kriti.cs10@gmail.com">kriti.cs10@gmail.com</a> or follow me <a href="https://twitter.com/kriti_k01">kriti_k01</a>
 </p>
 
 
