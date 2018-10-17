@@ -7,10 +7,10 @@ title: About
   “when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.” 
   </p>
   <p>
-  Hey there! I am a software engineer based out in Mumbai.I am currently working as a python developer in a startup.
+  I am a software engineer based out in Mumbai.I am currently working as a python developer in a Startup.
   </p>
   <p>
-  I have previously worked as a system engineer in Infosys pvt. Limited. I am havng experince in full stack development 
+  I have previously worked as a system engineer in Infosys pvt. Limited. I am highly experinced in Full stack development 
   with a focus on backend development using Django, Flask.
   </p>
   <p>
