@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Go and rust for python programmer
 ---
-
+# Go and rust for python programmer
 As many of us attended Pycon india in Hyderabad and I guess we all were little confused after keynote speech by Armin Ronacher that whether Rust is really better than python.
 
 I have worked on python2/python3 for most of my backend project.From Django/Flask application to admin scripting or machine learning , I have used python only.But there were lots of things that I didn't find right in python like:
