@@ -77,4 +77,4 @@ Now we know what is machine learning, why it’s being used and from where we ca
    ### Negative Reinforcement:
    Event which increase the behaviour because a negative condition is avoided or stopped. i.e provide enough to meet              minimum behaviour.
 
-That’s all folks for this story, I hope you found it useful. I will cover supervised learning algorithms and reinforcement machine learning in detail in separate story.This story is also published on https://medium.com/@kriti_shrivastwa/machine-learning-for-newbie-f79407ab378b
+That’s all folks for this story, I hope you found it useful. I will cover supervised learning algorithms and reinforcement machine learning in detail in separate story.This story is also published on [medium](https://medium.com/@kriti_shrivastwa/machine-learning-for-newbie-f79407ab378b)
