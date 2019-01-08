@@ -2,7 +2,7 @@
 layout: post
 ---
 # **Machine learning for Newbie**
-  ![source:towardsdatascience](https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/ml1.png)
+  ![source:towardsdatascience](http://cors.io/?https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/ml1.png)
   
   This article is for newbies first starting with machine learning. The idea in this article is to give a rough framework on     how and why should we start to learn machine learning and what are resources or platform from where one can start to learn.   This article will also cover some basic concepts in machine learning.
 
@@ -24,7 +24,7 @@ layout: post
   
    **6. Fraud detection**: Based on transaction details classify if a transaction if legit or fraudulent.
 
-### Prerequisites:
+### **Prerequisites**:
   Since you know what is machine learning and what’s the use of it, next question will come to your mind what do I need to       start?
 
   You need good knowledge and interest in mathematics if you want to learn machine learning.You should have good knowledge in:
@@ -42,7 +42,7 @@ layout: post
 
   You don’t need to be great at these concepts or language, if only you know the basic concepts you can easily start.
 
-### Resources for machine learning:
+### **Resources for machine learning**:
   You can always start learning from courses on [machine learning](https://www.coursera.org/learn/machine-learning) by “Andrew    ng” or [intro to machine learning](https://in.udacity.com/course/intro-to-machine-learning--ud120-india) by “Katie Malone”    and “Sebastian Thrun”. You can also do courses [statistics by SJSU](https://in.udacity.com/course/statistics--st095) to        have some basic knowledge in data representation and analysis. One can also start from this book [“The Elements of   Statistical Learning”](https://web.stanford.edu/~hastie/Papers/ESLII.pdf).
 
   Now we know what is machine learning, why it’s being used and from where we can start learning, let’s dive into some basic     concepts in machine learning.
@@ -50,7 +50,7 @@ layout: post
 ## Machine learning types:
   Machine learning can be mainly categorised into 3 types.
   
-  ![source: Analytics vidhya](https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/type_machine.png)
+  ![source: Analytics vidhya](http://cors.io/?https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/type_machine.png)
   
   
    **1. Supervised learning**: In supervised learning we already know what our output is going to be assuming there is                 relation between input and output. We have given a input variable ‘X’ and output variable ‘Y’ and there is a mapping           function which we called hypothesis h(x) which maps our input variable to our output variable. The goal is to find             such a hypothesis which covers well our training data and can predict output if we provide new data.Supervised                 learning can be classified into two types:
@@ -68,8 +68,7 @@ layout: post
    **2.2. Non-clustering**: The “Cocktail Party Algorithm”, allows you to find structure in a chaotic environment. (i.e.                identifying individual voices and music from a mesh of sounds at a cocktail party).(example from coursera)
 
    **3. Reinforcement Learning**: Reinforcement learning is about taking best decision in a particular situation. In the below        figure there is a robot and a reward(Diamond) and the goal of the robot is to find the diamond using best possible path        and avoid fire. The robot will try all possible path to reach the diamond and will learn from the experience , each            positive path will add to the reward and negative will subtract from the reward. Total reward for the robot will be            calculated when it reaches the diamond.
-       <img src="https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/re.png">
-   ![source: geeksforgeeks](https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/re.png)
+   ![source: geeksforgeeks](http://cors.io/?https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/re.png)
        
        
    **3.1. Positive Reinforcement**: Event which increase the Frequency of rewards i.e increase the performance.
