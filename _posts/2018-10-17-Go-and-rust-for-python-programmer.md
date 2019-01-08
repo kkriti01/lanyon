@@ -68,7 +68,7 @@ layout: post
    **2.2. Non-clustering**: The “Cocktail Party Algorithm”, allows you to find structure in a chaotic environment. (i.e.                identifying individual voices and music from a mesh of sounds at a cocktail party).(example from coursera)
 
    **3. Reinforcement Learning**: Reinforcement learning is about taking best decision in a particular situation. In the below        figure there is a robot and a reward(Diamond) and the goal of the robot is to find the diamond using best possible path        and avoid fire. The robot will try all possible path to reach the diamond and will learn from the experience , each            positive path will add to the reward and negative will subtract from the reward. Total reward for the robot will be            calculated when it reaches the diamond.
-   ![source: geeksforgeeks](../_includes/re.png)
+   <img src="../gh-pages/_includes/re.png??raw=true">
        
        
    **3.1. Positive Reinforcement**: Event which increase the Frequency of rewards i.e increase the performance.
