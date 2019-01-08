@@ -47,7 +47,7 @@ layout: post
 
   Now we know what is machine learning, why it’s being used and from where we can start learning, let’s dive into some basic     concepts in machine learning.
 
-## Machine learning types:
+## **Machine learning types**:
   Machine learning can be mainly categorised into 3 types.
   
   ![](../assets/type_machine.png?raw=true)
