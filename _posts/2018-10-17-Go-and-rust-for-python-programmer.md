@@ -2,7 +2,7 @@
 layout: post
 ---
 # **Machine learning for Newbie**
-  ![source:towardsdatascience](/_includes/ml1.png)
+  ![source:towardsdatascience](_includes/ml1.png)
   
   This article is for newbies first starting with machine learning. The idea in this article is to give a rough framework on     how and why should we start to learn machine learning and what are resources or platform from where one can start to learn.   This article will also cover some basic concepts in machine learning.
 
@@ -50,7 +50,7 @@ layout: post
 ## Machine learning types:
   Machine learning can be mainly categorised into 3 types.
   
-  ![source: Analytics vidhya](http://cors.io/?https://github.com/kkriti01/lanyon/blob/gh-pages/_includes/type_machine.png)
+  ![source: Analytics vidhya](_includes/type_machine.png)
   
   
    **1. Supervised learning**: In supervised learning we already know what our output is going to be assuming there is                 relation between input and output. We have given a input variable ‘X’ and output variable ‘Y’ and there is a mapping           function which we called hypothesis h(x) which maps our input variable to our output variable. The goal is to find             such a hypothesis which covers well our training data and can predict output if we provide new data.Supervised                 learning can be classified into two types:
