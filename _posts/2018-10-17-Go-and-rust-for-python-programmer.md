@@ -50,7 +50,7 @@ layout: post
 ## Machine learning types:
   Machine learning can be mainly categorised into 3 types.
   
-  [](../assets/type_machine.png?raw=true)
+  ![](../assets/type_machine.png?raw=true)
   
   
    **1. Supervised learning**: In supervised learning we already know what our output is going to be assuming there is                 relation between input and output. We have given a input variable ‘X’ and output variable ‘Y’ and there is a mapping           function which we called hypothesis h(x) which maps our input variable to our output variable. The goal is to find             such a hypothesis which covers well our training data and can predict output if we provide new data.Supervised                 learning can be classified into two types:
