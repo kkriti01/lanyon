@@ -2,7 +2,7 @@
 layout: post
 ---
 # **Machine learning for Newbie**
-  <img src="../ml1.png">
+  <img src="assets/ml1.png">
   
   This article is for newbies first starting with machine learning. The idea in this article is to give a rough framework on     how and why should we start to learn machine learning and what are resources or platform from where one can start to learn.   This article will also cover some basic concepts in machine learning.
 
@@ -50,7 +50,7 @@ layout: post
 ## Machine learning types:
   Machine learning can be mainly categorised into 3 types.
   
-  ![source: Analytics vidhya](../_includes/type_machine.png)
+  <img src="assets/type_machine.png">
   
   
    **1. Supervised learning**: In supervised learning we already know what our output is going to be assuming there is                 relation between input and output. We have given a input variable ‘X’ and output variable ‘Y’ and there is a mapping           function which we called hypothesis h(x) which maps our input variable to our output variable. The goal is to find             such a hypothesis which covers well our training data and can predict output if we provide new data.Supervised                 learning can be classified into two types:
@@ -68,7 +68,7 @@ layout: post
    **2.2. Non-clustering**: The “Cocktail Party Algorithm”, allows you to find structure in a chaotic environment. (i.e.                identifying individual voices and music from a mesh of sounds at a cocktail party).(example from coursera)
 
    **3. Reinforcement Learning**: Reinforcement learning is about taking best decision in a particular situation. In the below        figure there is a robot and a reward(Diamond) and the goal of the robot is to find the diamond using best possible path        and avoid fire. The robot will try all possible path to reach the diamond and will learn from the experience , each            positive path will add to the reward and negative will subtract from the reward. Total reward for the robot will be            calculated when it reaches the diamond.
-   <img src="../gh-pages/_includes/re.png??raw=true">
+   <img src="assets/re.png">
        
        
    **3.1. Positive Reinforcement**: Event which increase the Frequency of rewards i.e increase the performance.
