@@ -2,7 +2,7 @@
 layout: post
 ---
 # **Machine learning for Newbie**
-  <img src="../assets/ml1.png?raw=true">
+  ![](../assets/ml1.png?raw=true)
   
   This article is for newbies first starting with machine learning. The idea in this article is to give a rough framework on     how and why should we start to learn machine learning and what are resources or platform from where one can start to learn.   This article will also cover some basic concepts in machine learning.
 
