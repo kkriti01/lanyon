@@ -6,7 +6,7 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    {{paginator.posts}}
+    {{paginator}}
     {{ post.content }}
   </div>
   {% endfor %}
