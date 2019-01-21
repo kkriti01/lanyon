@@ -1,4 +1,4 @@
 ---
 layout: post
 ---
-# ** Supervised learning**
+# **Supervised learning**
