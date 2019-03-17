@@ -7,7 +7,8 @@ IMAP and POP3 are mostly used internet mail protocol to fetch email from remote 
 But we are going to use IMAP here, imaplib implements clients which can be used to communicate with IMAP servers.
 
 ### Modules that we are going to use
-```import imaplib
+```python
+import imaplib
 import email
 import os
 import shutil
@@ -18,11 +19,13 @@ email module is used to read email messages, it can also be used to write and se
 We will use tempfile to create temporary directory to download attachment and shutil to remove directory after being used.
 We will use docx module which will be used to parse word document.We can install docx module by:
 
-```pip install python-docx
+```python
+pip install python-docx
 ```
 
 ### Credentials to login
-```LOGIN_EMAIL = ""
+```python
+LOGIN_EMAIL = ""
 LOGIN_PWD = ""
 SMTP_SERVER = "imap.gmail.com"
 SMTP_PORT = 993
