@@ -2,49 +2,60 @@
 layout: post
 ---
 
+# Read and Parse email attachments
 IMAP and POP3 are mostly used internet mail protocol to fetch email from remote server. 
 But we are going to use IMAP here, imaplib implements clients which can be used to communicate with IMAP servers.
 
-# Modules that we are going to use
-import imaplib
+### Modules that we are going to use
+```import imaplib
 import email
 import os
 import shutil
 import tempfile
 from docx import Document
+```
 
 email module is used to read email messages, it can also be used to write and send messages. 
 We will use tempfile to create temporary directory to download attachment and shutil to remove directory after being used.
 We will use docx module which will be used to parse word document.We can install docx module by:
 
+```
 pip install python-docx
+```
 
-# Credentials to login
+### Credentials to login
+```
 LOGIN_EMAIL = ""
 LOGIN_PWD = ""
 SMTP_SERVER = "imap.gmail.com"
 SMTP_PORT = 993
 FROM_EMAIL = ''
+```
 
 We need to specify credentials for login into email and you can specify sender whose mail you want to read. 
 We can also do query by 'FROM', 'TO'.
 
-# Login to IMAP server and select folder from which we have to read
+### Login to IMAP server and select folder from which we have to read
+```
 m = imaplib.IMAP4_SSL(SMTP_SERVER, SMTP_PORT)
 m.login(LOGIN_EMAIL, LOGIN_PWD)
+```
 
-# select inbox or can specify folder or all
+### select inbox or can specify folder or all
+```
 m.select('"inbox"')
-
+```
 Login to server using email and password, imaplib implements client which can connect to IMAP4 server.
 We can specify folder i.e 'inbox' or any folder from which we want to read the mail.
 
-# Search using query like 'FROM' 'TO'
+### Search using query like 'FROM' 'TO'
+```
 result, data = m.uid('search', None, '(FROM "{}")'.format(FROM_EMAIL))  # search all email and return uids
-
+```
 The data that we got here is a list of Ids and we can use these id to fetch subject, body and attachment from the mail.
 
-# Fetch data for ids we got in previous step and read attachment and download it into a temporary directory.
+### Fetch data for ids we got in previous step and read attachment and download it into a temporary directory.
+```
 for num in data[0].split():
     # Fetch mail from server
     result, data = m.uid('fetch', num, '(RFC822)')
@@ -75,7 +86,7 @@ for num in data[0].split():
                 recruit_data = parse_attachment(document)               
             # Delete temp directory
             shutil.rmtree(path)
-            
+```            
  After login we can search mail using query like 'FROM', 'TO'. We can pass 'ALL' to fetch all the messages.
  For id which we got in previous step, we will fetch mail using 'RFC822' which is internet mail access protocol.
  Message that we get here will be binary encode so decode it using .decode('utf-8'). 
@@ -85,14 +96,16 @@ for num in data[0].split():
  then email contains attachment.We will create a temporary directory using tempfile.mkdtemp() and will download attachment 
  in this directory. After parsing from document file will remove this directory using shutil.rmtree(path).  
  
- # Create document by passing filePath
+### Create document by passing filePath
+```
 document = Document(filePath)
 recruit_data = parse_attachment(document)
-
+```
 Create document from docx module by passing our document file path.
 Those document can be used to parse table and paragraph in the documents.
 
-# Parse attached documents
+### Parse attached documents
+```
 def parse_attachment(document):
     paragraphs = []
     data = {}
@@ -124,6 +137,6 @@ def get_key_value(item):
         return data
     else:
         return None
-        
+ ```       
  document that we got in previous step can be used to get tables .The document.tables will give you all
  tables in the document. We can iterate over row and cells of table and get text from cells or paragraph.       
