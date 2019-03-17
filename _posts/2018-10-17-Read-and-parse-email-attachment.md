@@ -140,4 +140,4 @@ def get_key_value(item):
         return None
  ```       
 document that we got in previous step can be used to get tables .The document.tables will give you all
-tables in the document. We can iterate over row and cells of table and get text from cells or paragraph. This article is also available on medium [here]https://medium.com/@kriti_shrivastwa/read-and-parse-email-attachment-32d5621178f3.      
+tables in the document. We can iterate over row and cells of table and get text from cells or paragraph. This article is also available on medium [here](https://medium.com/@kriti_shrivastwa/read-and-parse-email-attachment-32d5621178f3)      
