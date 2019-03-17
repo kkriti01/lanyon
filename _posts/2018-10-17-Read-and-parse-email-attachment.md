@@ -7,7 +7,7 @@ IMAP and POP3 are mostly used internet mail protocol to fetch email from remote 
 But we are going to use IMAP here, imaplib implements clients which can be used to communicate with IMAP servers.
 
 ### Modules that we are going to use
-```python
+--python
 import imaplib
 import email
 import os
