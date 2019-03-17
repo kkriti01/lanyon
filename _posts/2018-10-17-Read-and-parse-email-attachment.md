@@ -2,7 +2,7 @@
 layout: post
 ---
 
-# Read and Parse email attachments
+# **Read and Parse email attachments**
 IMAP and POP3 are mostly used internet mail protocol to fetch email from remote server. 
 But we are going to use IMAP here, imaplib implements clients which can be used to communicate with IMAP servers.
 
@@ -139,4 +139,4 @@ def get_key_value(item):
         return None
  ```       
 document that we got in previous step can be used to get tables .The document.tables will give you all
-tables in the document. We can iterate over row and cells of table and get text from cells or paragraph.       
+tables in the document. We can iterate over row and cells of table and get text from cells or paragraph. This article is also available on medium https://medium.com/@kriti_shrivastwa/read-and-parse-email-attachment-32d5621178f3.      
