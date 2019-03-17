@@ -7,7 +7,7 @@ IMAP and POP3 are mostly used internet mail protocol to fetch email from remote 
 But we are going to use IMAP here, imaplib implements clients which can be used to communicate with IMAP servers.
 
 ### Modules that we are going to use
---python
+```python
 import imaplib
 import email
 import os
@@ -24,7 +24,7 @@ pip install python-docx
 ```
 
 ### Credentials to login
---python
+```python
 LOGIN_EMAIL = ""
 LOGIN_PWD = ""
 SMTP_SERVER = "imap.gmail.com"
@@ -36,20 +36,21 @@ We need to specify credentials for login into email and you can specify sender w
 We can also do query by 'FROM', 'TO'.
 
 ### Login to IMAP server and select folder from which we have to read
---python
+```python
 m = imaplib.IMAP4_SSL(SMTP_SERVER, SMTP_PORT)
 m.login(LOGIN_EMAIL, LOGIN_PWD)
 ```
 
 ### select inbox or can specify folder or all
---python
+```python
 m.select('"inbox"')
 ```
 Login to server using email and password, imaplib implements client which can connect to IMAP4 server.
 We can specify folder i.e 'inbox' or any folder from which we want to read the mail.
 
 ### Search using query like 'FROM' 'TO'
-```result, data = m.uid('search', None, '(FROM "{}")'.format(FROM_EMAIL))  # search all email and return uids
+```python
+result, data = m.uid('search', None, '(FROM "{}")'.format(FROM_EMAIL))  # search all email and return uids
 ```
 The data that we got here is a list of Ids and we can use these id to fetch subject, body and attachment from the mail.
 
@@ -86,15 +87,14 @@ for num in data[0].split():
             # Delete temp directory
             shutil.rmtree(path)
 ```  
-
- After login we can search mail using query like 'FROM', 'TO'. We can pass 'ALL' to fetch all the messages.
- For id which we got in previous step, we will fetch mail using 'RFC822' which is internet mail access protocol.
- Message that we get here will be binary encode so decode it using .decode('utf-8'). 
- After converting data to string we will use 'email' module and will create dictionary of messages using function 
- .message_from_string(raw_email_string). Now we will iterate over message using .walk which is used to iterate over
- message tree and will check if message contain multipart data or plain text data.If .get_content_maintype() is 'multipart' 
- then email contains attachment.We will create a temporary directory using tempfile.mkdtemp() and will download attachment 
- in this directory. After parsing from document file will remove this directory using shutil.rmtree(path).  
+After login we can search mail using query like 'FROM', 'TO'. We can pass 'ALL' to fetch all the messages.
+For id which we got in previous step, we will fetch mail using 'RFC822' which is internet mail access protocol.
+Message that we get here will be binary encode so decode it using .decode('utf-8'). 
+After converting data to string we will use 'email' module and will create dictionary of messages using function 
+.message_from_string(raw_email_string). Now we will iterate over message using .walk which is used to iterate over
+message tree and will check if message contain multipart data or plain text data.If .get_content_maintype() is 'multipart' 
+then email contains attachment.We will create a temporary directory using tempfile.mkdtemp() and will download attachment 
+in this directory. After parsing from document file will remove this directory using shutil.rmtree(path).  
  
 ### Create document by passing filePath
 ```python
@@ -138,5 +138,5 @@ def get_key_value(item):
     else:
         return None
  ```       
- document that we got in previous step can be used to get tables .The document.tables will give you all
- tables in the document. We can iterate over row and cells of table and get text from cells or paragraph.       
+document that we got in previous step can be used to get tables .The document.tables will give you all
+tables in the document. We can iterate over row and cells of table and get text from cells or paragraph.       
