@@ -24,7 +24,7 @@ pip install python-docx
 ```
 
 ### Credentials to login
-```python
+--python
 LOGIN_EMAIL = ""
 LOGIN_PWD = ""
 SMTP_SERVER = "imap.gmail.com"
@@ -36,12 +36,14 @@ We need to specify credentials for login into email and you can specify sender w
 We can also do query by 'FROM', 'TO'.
 
 ### Login to IMAP server and select folder from which we have to read
-```m = imaplib.IMAP4_SSL(SMTP_SERVER, SMTP_PORT)
+--python
+m = imaplib.IMAP4_SSL(SMTP_SERVER, SMTP_PORT)
 m.login(LOGIN_EMAIL, LOGIN_PWD)
 ```
 
 ### select inbox or can specify folder or all
-```m.select('"inbox"')
+--python
+m.select('"inbox"')
 ```
 Login to server using email and password, imaplib implements client which can connect to IMAP4 server.
 We can specify folder i.e 'inbox' or any folder from which we want to read the mail.
@@ -52,7 +54,8 @@ We can specify folder i.e 'inbox' or any folder from which we want to read the m
 The data that we got here is a list of Ids and we can use these id to fetch subject, body and attachment from the mail.
 
 ### Fetch data for ids we got in previous step and read attachment and download it into a temporary directory.
-```for num in data[0].split():
+```python
+for num in data[0].split():
     # Fetch mail from server
     result, data = m.uid('fetch', num, '(RFC822)')
     if result == 'OK':
@@ -94,14 +97,16 @@ The data that we got here is a list of Ids and we can use these id to fetch subj
  in this directory. After parsing from document file will remove this directory using shutil.rmtree(path).  
  
 ### Create document by passing filePath
-```document = Document(filePath)
+```python
+document = Document(filePath)
 recruit_data = parse_attachment(document)
 ```
 Create document from docx module by passing our document file path.
 Those document can be used to parse table and paragraph in the documents.
 
 ### Parse attached documents
-```def parse_attachment(document):
+```python
+def parse_attachment(document):
     paragraphs = []
     data = {}
     for table in document.tables:
